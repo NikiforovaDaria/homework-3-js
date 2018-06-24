@@ -3,9 +3,8 @@
 function splitAndMerge(str, sp) {
     const words = str.split(' ');
     const letters = words.map((value) => {
-        return value.split('');
+        return value.split('').join(sp);
     });
-    letters.join(sp);
     const result = letters.join(' ');
     return result;
 }
